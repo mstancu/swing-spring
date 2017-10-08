@@ -12,11 +12,11 @@ import javax.swing.JButton;
 @Scope("prototype")
 public class BottomMainButton extends JButton {
     @Autowired
-    private ButtonListener actionListener;
+    private ButtonListener listener;
 
     @PostConstruct
     public void init() {
         this.setText("Press me");
-        this.addActionListener(actionListener);
+        this.addActionListener(listener);
     }
 }

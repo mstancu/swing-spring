@@ -9,5 +9,5 @@ import org.springframework.context.annotation.PropertySource;
         "springexample"
 )
 @PropertySource("classpath:default.properties")
-public class SpringConfig {
+public class ConfigSpring {
 }

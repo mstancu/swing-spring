@@ -16,15 +16,14 @@ public class MainFrame extends JFrame {
     MainPanel contentPane;
 
     @Value("${title}")
-    String title;
+    String frameTitle;
 
     @PostConstruct
     public void init() {
         java.awt.EventQueue.invokeLater(() -> {
             setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
             setSize(new Dimension(300, 300));
-            setVisible(true);
-            setTitle(title);
+            setTitle(frameTitle);
             add(contentPane);
         });
     }
